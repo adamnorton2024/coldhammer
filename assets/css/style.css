@@ -1,0 +1,72 @@
+/* Home Page Text - Bookman Old Style Regular
+Drink Titles(gold) - Advertising Script Bold - leave 2 spaces in the beginning
+Cocktails Text - Bookman Old Style Regular */
+
+/* Gold Color = #f5e880 */
+
+* {
+    border: 1px dotted gold;
+}
+
+@font-face {
+    font-family: 'advertising_scriptbold';
+    src: url('../fonts/advertisingscript-bold-webfont.woff2') format('woff2'),
+         url('../fonts/advertisingscript-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bookman_old_style';
+    src: url('../fonts/bkr.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: 'bookman_old_style', 'helvetica', serif;
+    background-color: black;
+}
+
+
+#bg-static{
+    background-image: url("../images/bg_static_chs.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.masthead {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../images/bg_landingpage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-gold {
+    width: 40%;
+    background-color: #f5e880;
+    color:black;
+}
+
+.btn-gold:hover {
+    width: 40%;
+    background-color: #fafcc6;
+    color:black;
+}
+
+.text-heading {
+    font-size: 5em;
+}
+
+.font-adv-bold{
+    font-family: 'advertising_scriptbold';
+    color: #f5e880;
+}
