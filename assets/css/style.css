@@ -4,9 +4,9 @@ Cocktails Text - Bookman Old Style Regular */
 
 /* Gold Color = #f5e880 */
 
-* {
+/* * {
     border: 1px dotted gold;
-}
+} */
 
 @font-face {
     font-family: 'advertising_scriptbold';
@@ -20,6 +20,12 @@ Cocktails Text - Bookman Old Style Regular */
 body{
     font-family: 'bookman_old_style', 'helvetica', serif;
     background-color: black;
+}
+
+h1, h4 {
+    font-family: 'Bookman Old Style', 'helvetica', serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 a {
@@ -71,6 +77,10 @@ a:hover {
 .font-adv-bold{
     font-family: 'advertising_scriptbold';
     color: #f5e880;
+}
+
+.no-margin{
+  margin: 0px;
 }
 
 #bottles{

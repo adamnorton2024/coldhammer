@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+
     <!-- Local CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -49,23 +52,23 @@
         
         </div>
 
-        <section class="scene mt-5" id="bottles">
+        <section class="scene mt-5 py-3" id="bottles">
             <div class="container">
                 <div class="row my-5 d-flex flex-row justify-content-around">
                     <div class="col-md-2">
-                        <img class='img-fluid shake' src="./assets/images/bottle_cappuccino.png">
+                        <img class='btn img-fluid shake' id="cappuccino" src="./assets/images/bottle_cappuccino.png" data-toggle='modal' data-target='#cappuccinoModal'>
                     </div>
-                    <div class="col-md-2 wiggle">
-                        <img class='img-fluid' src="./assets/images/bottle_chocpeanut.png">
-                    </div>
-                    <div class="col-md-2">
-                        <img class='img-fluid pulse' src="./assets/images/bottle_almond.png">
+                    <div class="col-md-2 shake">
+                        <img class='btn img-fluid' id="chocpeanut" src="./assets/images/bottle_chocpeanut.png">
                     </div>
                     <div class="col-md-2">
-                        <img class='img-fluid zoom' src="./assets/images/bottle_blackwidow.png">
+                        <img class='btn img-fluid shake' id="almond" src="./assets/images/bottle_almond.png">
                     </div>
                     <div class="col-md-2">
-                        <img class='img-fluid rock' src="./assets/images/bottle_cinnamon.png">
+                        <img class='btn img-fluid shake' id="blackwidow" src="./assets/images/bottle_blackwidow.png">
+                    </div>
+                    <div class="col-md-2">
+                        <img class='btn img-fluid shake' id="cinnamon" src="./assets/images/bottle_cinnamon.png">
                     </div>
                 </div>
             </div>
@@ -75,6 +78,32 @@
     
 
 
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="cappuccinoModal" tabindex="-1" role="dialog" aria-labelledby="cappuccinoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./assets/images/label_cappuccino.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-7 mx-auto px-0">
+                                <h1 class="text-center">Chocolate Cappuccino</h1>
+                                <h1 class="text-center">70 Proof</h1>
+                                <h4>Chocolate Cappucino provides a balanced blend of delicate coffee, light cinnamon and aromatic cocoa to create an enticing, robust flavor.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
