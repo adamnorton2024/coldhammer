@@ -28,6 +28,12 @@ h1, h4 {
     font-style: normal;
 }
 
+#landing-name {
+    font-family: 'advertising_scriptbold';
+    font-weight: normal;
+    font-style: normal;
+}
+
 a {
     color: white;
     font-family: 'Bookman Old Style', 'helvetica', serif;
