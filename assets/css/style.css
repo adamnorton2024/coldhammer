@@ -17,18 +17,20 @@ Cocktails Text - Bookman Old Style Regular */
 
 }
 
-
-@font-face {
-    font-family: 'bookman_old_style';
-    src: url('../fonts/bkr.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body{
     font-family: 'bookman_old_style', 'helvetica', serif;
     background-color: black;
+}
+
+a {
+    color: white;
+    font-family: 'Bookman Old Style', 'helvetica', serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:hover {
+    color: white;
 }
 
 
@@ -70,3 +72,61 @@ body{
     font-family: 'advertising_scriptbold';
     color: #f5e880;
 }
+
+#bottles{
+    width: 100%;
+    height: auto;
+    background-image: url('../images/bg_bottles.jpg');
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/***** Wiggle *****/
+
+.wiggle:hover{ 
+  animation: wiggle 400ms infinite;
+  animation-timing-function: linear;   
+}
+
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-2px, 0); }
+  100% { transform: translate(2px, 0); }
+}
+
+/***** Shake *****/
+
+.shake:hover{ 
+  animation: shake 350ms infinite;
+  animation-timing-function: linear;   
+}
+
+@keyframes shake {
+  0% { transform: rotate(0.5deg); }
+  50% { transform: rotate(-0.5deg); }
+  100% { transform: rotate(0.5deg); }
+}
+
+/***** Pulse *****/
+
+.pulse:hover{ 
+  animation: pulse .75s infinite;
+  animation-timing-function: linear;   
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1);
+  100% { transform: scale(1); }
+  }
+}
+
+/***** Zoom *****/
+
+.zoom:hover{
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
