@@ -56,37 +56,34 @@
             <div class="container">
                 <div class="row my-5 d-flex flex-row justify-content-around">
                     <div class="col-md-2">
-                        <img class='btn img-fluid shake' id="cappuccino" src="./assets/images/bottle_cappuccino.png" data-toggle='modal' data-target='#cappuccinoModal'>
+                        <img class='btn img-fluid shake' id="cappuccino" src="./assets/images/bottle_cappuccino.png" data-toggle='modal' data-target='#flavorModal' data-flavor="cappuccino">
                     </div>
                     <div class="col-md-2 shake">
-                        <img class='btn img-fluid' id="chocpeanut" src="./assets/images/bottle_chocpeanut.png">
+                        <img class='btn img-fluid' id="chocpeanut" src="./assets/images/bottle_chocpeanut.png" data-toggle='modal' data-target='#flavorModal' data-flavor="chocpeanut">
                     </div>
                     <div class="col-md-2">
-                        <img class='btn img-fluid shake' id="almond" src="./assets/images/bottle_almond.png">
+                        <img class='btn img-fluid shake' id="almond" src="./assets/images/bottle_almond.png" data-toggle='modal' data-target='#flavorModal' data-flavor="almond">
                     </div>
                     <div class="col-md-2">
-                        <img class='btn img-fluid shake' id="blackwidow" src="./assets/images/bottle_blackwidow.png">
+                        <img class='btn img-fluid shake' id="blackwidow" src="./assets/images/bottle_blackwidow.png" data-toggle='modal' data-target='#flavorModal' data-flavor="blackwidow">
                     </div>
                     <div class="col-md-2">
-                        <img class='btn img-fluid shake' id="cinnamon" src="./assets/images/bottle_cinnamon.png">
+                        <img class='btn img-fluid shake' id="cinnamon" src="./assets/images/bottle_cinnamon.png" data-toggle='modal' data-target='#flavorModal' data-flavor="cinnamon" >
                     </div>
                 </div>
             </div>
         </section>
 
     </header>
-    
-
-
 
 
 
 
     <!-- Modal -->
-    <div class="modal fade" id="cappuccinoModal" tabindex="-1" role="dialog" aria-labelledby="cappuccinoModalLabel"
+    <div class="modal fade" id="flavorModal" tabindex="-1" role="dialog" aria-labelledby="flavorModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
+            <div class="modal-content rounded-0">
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
@@ -94,9 +91,9 @@
                                 <img src="./assets/images/label_cappuccino.jpg" alt="" class="img-fluid">
                             </div>
                             <div class="col-md-7 mx-auto px-0">
-                                <h1 class="text-center">Chocolate Cappuccino</h1>
-                                <h1 class="text-center">70 Proof</h1>
-                                <h4>Chocolate Cappucino provides a balanced blend of delicate coffee, light cinnamon and aromatic cocoa to create an enticing, robust flavor.</h4>
+                                <h1 class="text-center" id="flavor-name">Chocolate Cappuccino</h1>
+                                <h1 class="text-center" id='flavor-proof'>70 Proof</h1>
+                                <h4 id="flavor-desc">Chocolate Cappucino provides a balanced blend of delicate coffee, light cinnamon and aromatic cocoa to create an enticing, robust flavor.</h4>
                             </div>
                         </div>
                     </div>
@@ -114,6 +111,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <!-- Local Script -->
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
 </html>
