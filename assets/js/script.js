@@ -1,4 +1,4 @@
-console.log("Script is working.");
+
 
 $('#flavorModal').on('show.bs.modal', function (event) {
 
@@ -17,34 +17,28 @@ $('#flavorModal').on('show.bs.modal', function (event) {
     let button = $(event.relatedTarget) // Button that triggered the modal
     let flavor = button.data('flavor') // Extract info from data-* attributes
     let flavorName = "";
-    let flavorDescription = "";
     let proof = "70 Proof";
 
 
     switch (flavor) {
         case "cappuccino":
-            console.log("Flavor is Cappuccino.");
             flavorName = flav_name_ChocolateCappuccino;
             flavorDesc = flav_desc_ChocolateCappuccino;
             break;
         case "chocpeanut":
-            console.log("Flavor is Chocolate Peanut Butter.");
             flavorName = flav_name_ChocolatePeanutButter;
             flavorDesc = flav_desc_ChocolatePeanutButter;
             break;
         case "almond":
-            console.log("Flavor is Almond Enjoy.");
             flavorName = flav_name_AlmondEnjoy;
             flavorDesc = flav_desc_AlmondEnjoy;
             break;
         case "blackwidow":
-            console.log("Flavor is Black Widow.");
             flavorName = flav_name_BlackWidow;
             flavorDesc = flav_desc_BlackWidow;
             proof = "107 Proof";
             break;
         case "cinnamon":
-            console.log("Flavor is Gas Light Cinnamon.");
             flavorName = flav_name_GasLightCinnamon;
             flavorDesc = flav_desc_GasLightCinnamon;
             break;
@@ -53,7 +47,7 @@ $('#flavorModal').on('show.bs.modal', function (event) {
             break;
     }
     
-    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    // Update the modal's content. 
     var modal = $(this)
     modal.find('#flavor-name').text(flavorName);
     modal.find('#flavor-proof').text(proof);
