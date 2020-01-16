@@ -28,6 +28,10 @@ h1, h4, h5, h6 {
     font-style: normal;
 }
 
+.video-heading{
+  font-size: 4em;
+}
+
 
 #landing-name {
     font-family: 'advertising_scriptbold';
