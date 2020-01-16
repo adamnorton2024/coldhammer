@@ -54,6 +54,7 @@ a:hover {
     height: 100%;
     width: 100%;
     overflow: auto;
+    background-attachment: fixed;
 }
 
 .masthead {
@@ -63,6 +64,14 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.scene{
+  margin-top: 8em;
+}
+
+#header-cocktail {
+  background-color: black;
 }
 
 .btn-gold {
@@ -79,6 +88,19 @@ a:hover {
 
 .text-heading {
     font-size: 5em;
+}
+
+.text-book{
+    color: white;
+    font-family: 'Bookman Old Style', 'helvetica', serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-grey-em {
+    font-family: 'advertising_scriptbold';
+    color: grey;
+    font-size: 1.75em;
 }
 
 .font-adv-bold{
@@ -98,6 +120,20 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+.modal-body {
+  background-color: #057d02;
+  border: .5em solid white;
+}
+
+.square-white {
+  background-color: white;
+}
+
+.green-outline{
+  background-color: white;
+  border: .2em solid #057d02;
 }
 
 /***** Wiggle *****/

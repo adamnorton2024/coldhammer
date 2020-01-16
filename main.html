@@ -51,51 +51,78 @@
             </ul>
         
         </div>
-
-        <section class="scene mt-5 py-3" id="bottles">
-            <div class="container">
-                <div class="row my-5 d-flex flex-row justify-content-around">
-                    <div class="col-md-2">
-                        <img class='btn img-fluid shake' id="cappuccino" src="./assets/images/bottle_cappuccino.png" data-toggle='modal' data-target='#flavorModal' data-flavor="cappuccino">
-                    </div>
-                    <div class="col-md-2 shake">
-                        <img class='btn img-fluid' id="chocpeanut" src="./assets/images/bottle_chocpeanut.png" data-toggle='modal' data-target='#flavorModal' data-flavor="chocpeanut">
-                    </div>
-                    <div class="col-md-2">
-                        <img class='btn img-fluid shake' id="almond" src="./assets/images/bottle_almond.png" data-toggle='modal' data-target='#flavorModal' data-flavor="almond">
-                    </div>
-                    <div class="col-md-2">
-                        <img class='btn img-fluid shake' id="blackwidow" src="./assets/images/bottle_blackwidow.png" data-toggle='modal' data-target='#flavorModal' data-flavor="blackwidow">
-                    </div>
-                    <div class="col-md-2">
-                        <img class='btn img-fluid shake' id="cinnamon" src="./assets/images/bottle_cinnamon.png" data-toggle='modal' data-target='#flavorModal' data-flavor="cinnamon" >
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </header>
 
+    <section class="mt-5 py-3" id="bottles">
+        <div class="container">
+            <div class="row my-5 d-flex flex-row justify-content-around">
+                <div class="col-md-2">
+                    <img class='btn img-fluid shake' id="cappuccino" src="./assets/images/bottle_cappuccino.png"
+                        data-toggle='modal' data-target='#flavorModal' data-flavor="cappuccino">
+                </div>
+                <div class="col-md-2 shake">
+                    <img class='btn img-fluid' id="chocpeanut" src="./assets/images/bottle_chocpeanut.png"
+                        data-toggle='modal' data-target='#flavorModal' data-flavor="chocpeanut">
+                </div>
+                <div class="col-md-2">
+                    <img class='btn img-fluid shake' id="almond" src="./assets/images/bottle_almond.png" data-toggle='modal'
+                        data-target='#flavorModal' data-flavor="almond">
+                </div>
+                <div class="col-md-2">
+                    <img class='btn img-fluid shake' id="blackwidow" src="./assets/images/bottle_blackwidow.png"
+                        data-toggle='modal' data-target='#flavorModal' data-flavor="blackwidow">
+                </div>
+                <div class="col-md-2">
+                    <img class='btn img-fluid shake' id="cinnamon" src="./assets/images/bottle_cinnamon.png"
+                        data-toggle='modal' data-target='#flavorModal' data-flavor="cinnamon">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="scene" id="header-cocktail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="./assets/images/cocktails_glass.jpg" alt="cocktail glass">
+                </div>
+                <div class="col-md-8 my-auto">
+                    <h4 class='text-book'>
+                        <span class='text-grey-em'>We believe </span>the drink you choose, tells the world exactly who you are and the content of your character. We craft our flavors based on the enjoyment of life, not from some corporate image of what we should do. Our history is not like the history you've known all your life. Cold Hammer Stills goes down as smoothly as it pours with a little venom from the night. We were born from a road that shines in the old moon light, with a taste made for the day and that day is tonight. 
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="scene" id="cocktails">
+        <div class="container">
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+    </section>
 
     <!-- Modal -->
     <div class="modal fade" id="flavorModal" tabindex="-1" role="dialog" aria-labelledby="flavorModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content rounded-0">
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="./assets/images/label_cappuccino.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-7 mx-auto px-0 d-flex flex-column">
-                                    <h1 class="text-center" id="flavor-name"></h1>
-                                    <h1 class="text-center" id='flavor-proof'></h1>
-                                    <div class="row h-100 mx-0">
-                                        <h4 class="my-auto" id="flavor-desc"></h4>
+                <div class="modal-body p-2">
+                    <div class="container-fluid px-0">
+                        <div class="row square-white mx-0">
+                            <div class="col-12 p-1 mx-0">
+                                <div class="row green-outline py-1 mx-0">
+                                    <div class="col-md-4">
+                                        <img src="./assets/images/label_cappuccino.jpg" alt="" class="img-fluid">
                                     </div>
+                                    <div class="col-md-7 mx-auto px-0 d-flex flex-column">
+                                        <h1 class="text-center" id="flavor-name"></h1>
+                                        <h1 class="text-center" id='flavor-proof'></h1>
+                                        <div class="row h-100 mx-0">
+                                            <h4 class="my-auto" id="flavor-desc"></h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
