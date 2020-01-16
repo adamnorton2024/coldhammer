@@ -22,7 +22,7 @@ body{
     background-color: black;
 }
 
-h1, h4 {
+h1, h4, h5, h6 {
     font-family: 'Bookman Old Style', 'helvetica', serif;
     font-weight: normal;
     font-style: normal;
@@ -110,6 +110,11 @@ a:hover {
 
 .no-margin{
   margin: 0px;
+}
+
+.cocktail {
+  background-color: black;
+  color: white;
 }
 
 #bottles{
