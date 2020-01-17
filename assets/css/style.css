@@ -4,9 +4,9 @@ Cocktails Text - Bookman Old Style Regular */
 
 /* Gold Color = #f5e880 */
 
-* {
+/* * {
     border: 1px dotted gold;
-}
+} */
 
 @font-face {
     font-family: 'advertising_scriptbold';
@@ -150,6 +150,10 @@ a:hover {
 .green-outline{
   background-color: white;
   border: .2em solid #057d02;
+}
+
+iframe {
+  border: 6px solid #50150d;
 }
 
 /***** Wiggle *****/
