@@ -1,3 +1,41 @@
+let fields = {};
+
+document.addEventListener("DOMContentLoaded", function() {
+    fields.name = document.getElementById('name');
+    fields.email = document.getElementById('email');
+    fields.subject = document.getElementById('subject');
+    fields.message = document.getElementById('message');
+});
+
+// Checking field value is not empty
+function isNotEmpty(value) {
+    if(value === null || typeof value === 'undefined') return false;
+
+    return (value.length > 0);
+};
+
+// Field Validation
+function fieldValidation(field, validationFunction){
+    if(field === null) return false;
+
+    let isFieldValid = validationFunction(field.value)
+    if (!isFieldValid) {
+        field.className = 'placeholderRed';
+    } else {
+        field.className = '';
+    }
+
+    return isFieldValid;
+}
+
+function isValid(){
+    let valid = true;
+
+    valid &= fieldValidation(fields.name, isNotEmpty);
+    valid &= fieldValidation(fields.email, isNotEmpty);
+    valid &= fieldValidation(fields.subject, isNotEmpty);
+    valid &= fieldValidation(fields.message, isNotEmpty);
+}
 
 
 $('#flavorModal').on('show.bs.modal', function (event) {
@@ -65,4 +103,4 @@ $('#flavorModal').on('show.bs.modal', function (event) {
     modal.find('#flavor-proof').text(proof);
     modal.find('#flavor-desc').text(flavorDesc);
     modal.find('#flavor-label').attr('src', label);
-})
+});

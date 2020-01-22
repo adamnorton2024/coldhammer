@@ -82,6 +82,7 @@ a:hover {
     width: 40%;
     background-color: #f5e880;
     color:black;
+    border: 1px solid black;
 }
 
 .btn-gold:hover {
@@ -176,6 +177,20 @@ iframe {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#contact{
+    width: 100%;
+    height: auto;
+    background-image: url('../images/bg_contact.jpg');
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.form-background{
+  background-color: white;
 }
 
 /***** Wiggle *****/
