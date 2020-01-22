@@ -1,4 +1,24 @@
 
+animateCSS('#cappuccino', 'slideInLeft');
+animateCSS('#chocpeanut', 'slideInLeft');
+animateCSS('#almond', 'slideInLeft');
+animateCSS('#blackwidow', 'slideInLeft');
+animateCSS('#cinnamon', 'slideInLeft');
+
+function animateCSS(element, animationName, callback) {
+    const node = document.querySelector(element)
+    node.classList.add('animated', animationName)
+
+    function handleAnimationEnd() {
+        node.classList.remove('animated', animationName)
+        node.removeEventListener('animationend', handleAnimationEnd)
+
+        if (typeof callback === 'function') callback()
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd)
+};
+
 $('#flavorModal').on('show.bs.modal', function (event) {
 
     const flav_name_AlmondEnjoy = "Almond Enjoy";
