@@ -189,8 +189,11 @@ iframe {
     background-position: bottom;
 }
 
-.form-background{
-  background-color: white;
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+	background: rgba(255,255,255,0.75);	
 }
 
 /***** Wiggle *****/
