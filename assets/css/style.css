@@ -4,9 +4,9 @@ Cocktails Text - Bookman Old Style Regular */
 
 /* Gold Color = #f5e880 */
 
-* {
+/* * {
     border: 1px dotted gold;
-}
+} */
 
 @font-face {
     font-family: 'advertising_scriptbold';
@@ -71,10 +71,6 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-.scene{
-  margin-top: 8em;
-}
-
 #header-cocktail {
   background-color: black;
 }
@@ -123,6 +119,16 @@ a:hover {
 .font-adv-bold{
     font-family: 'advertising_scriptbold';
     color: #f5e880;
+}
+
+#headings{
+  text-shadow: 2px 2px black;
+  margin-top: 2em;
+}
+
+#flavors{
+  text-shadow: 2px 2px black;
+  margin-top: 1em;
 }
 
 .no-margin{
@@ -199,6 +205,23 @@ iframe {
 	padding:15px 15px;
 	margin-top:15px;
 	background: rgba(255,255,255,0.75);	
+}
+
+#contact-area{
+  position: relative;
+}
+
+#form_container{
+  position: absolute;
+  top: 3.5rem;
+  left:5.5rem;
+  width: 25rem;
+}
+
+#hand{
+  position: relative;
+  z-index: 2;
+  left: -30px;
 }
 
 /***** Wiggle *****/
