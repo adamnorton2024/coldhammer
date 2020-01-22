@@ -65,23 +65,23 @@
         <div class="container">
             <div class="row py-5 d-flex flex-row justify-content-around">
                 <div class="col-sm-2 d-flex justify-content-center">
-                    <img class='btn img-fluid shake' id="cappuccino" src="./assets/images/bottle_cappuccino.png"
+                    <img class='btn img-fluid' id="cappuccino" src="./assets/images/bottle_cappuccino.png"
                         data-toggle='modal' data-target='#flavorModal' data-flavor="cappuccino">
                 </div>
                 <div class="col-sm-2 d-flex justify-content-center">
-                    <img class='btn img-fluid shake' id="chocpeanut" src="./assets/images/bottle_chocpeanut.png"
+                    <img class='btn img-fluid' id="chocpeanut" src="./assets/images/bottle_chocpeanut.png"
                         data-toggle='modal' data-target='#flavorModal' data-flavor="chocpeanut">
                 </div>
                 <div class="col-sm-2 d-flex justify-content-center">
-                    <img class='btn img-fluid shake fast' id="almond" src="./assets/images/bottle_almond.png" data-toggle='modal'
+                    <img class='btn img-fluid fast' id="almond" src="./assets/images/bottle_almond.png" data-toggle='modal'
                         data-target='#flavorModal' data-flavor="almond">
                 </div>
                 <div class="col-sm-2 d-flex justify-content-center">
-                    <img class='btn img-fluid shake fast' id="blackwidow" src="./assets/images/bottle_blackwidow.png"
+                    <img class='btn img-fluid fast' id="blackwidow" src="./assets/images/bottle_blackwidow.png"
                         data-toggle='modal' data-target='#flavorModal' data-flavor="blackwidow">
                 </div>
                 <div class="col-sm-2 d-flex justify-content-center">
-                    <img class='btn img-fluid shake faster' id="cinnamon" src="./assets/images/bottle_cinnamon.png"
+                    <img class='btn img-fluid faster' id="cinnamon" src="./assets/images/bottle_cinnamon.png"
                         data-toggle='modal' data-target='#flavorModal' data-flavor="cinnamon">
                 </div>
             </div>
@@ -455,10 +455,13 @@
     <!-- Modal -->
     <div class="modal fade" id="flavorModal" tabindex="-1" role="dialog" aria-labelledby="flavorModalLabel"
         aria-hidden="true">
+        
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content rounded-0">
+                
                 <div class="modal-body p-2">
-                    <div class="container-fluid px-0">
+                    
+                    <div class="container-fluid px-0" data-dismiss="modal" aria-label="Close">
                         <div class="row square-white mx-0">
                             <div class="col-12 p-1 mx-0">
                                 <div class="row green-outline py-1 mx-0">
@@ -472,6 +475,7 @@
                                             <h4 class="my-auto" id="flavor-desc"></h4>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>

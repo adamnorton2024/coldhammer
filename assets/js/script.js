@@ -12,6 +12,7 @@ function animateCSS(element, animationName, callback) {
     function handleAnimationEnd() {
         node.classList.remove('animated', animationName)
         node.removeEventListener('animationend', handleAnimationEnd)
+        node.classList.add('shake')
 
         if (typeof callback === 'function') callback()
     }
