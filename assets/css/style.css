@@ -4,9 +4,9 @@ Cocktails Text - Bookman Old Style Regular */
 
 /* Gold Color = #f5e880 */
 
-/* * {
+* {
     border: 1px dotted gold;
-} */
+}
 
 @font-face {
     font-family: 'advertising_scriptbold';
@@ -122,9 +122,11 @@ a:hover {
     color: #f5e880;
 }
 
-#headings{
+.headings{
   text-shadow: 2px 2px black;
   margin-top: 2em;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 #flavors{
@@ -177,6 +179,10 @@ iframe {
   border: 4px solid white;
 }
 
+#paolo {
+  font-size: 2vw;
+}
+
 #where {
   width: 100%;
   height: auto;
@@ -195,6 +201,7 @@ iframe {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    overflow-x: hidden;
 }
 
 #contact-back{
@@ -270,4 +277,18 @@ iframe {
   transform: scale(1.1);
   transition: all ease 500ms;
 }
+
+@media only screen and (max-width: 768px) {
+  #paolo {
+  font-size: 4vw;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  #paolo {
+  font-size: 8vw;
+}
+}
+
+
 

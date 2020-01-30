@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
 
     <!-- Local CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -110,22 +111,21 @@
     <section class="mt-4" id="cocktails">
         <div class="">
             <div class="row d-flex justify-content-around mx-0">
-                <div class="col-md-4 cocktail text-book">
+                <div class="col-md-4 cocktail text-book mt-2">
                     <h3 class="font-adv-bold text-center my-3">World's Easiest Martini</h3>
                     <div class="row d-flex justify-content-center">
                         <img height="256" src="./assets/images/cocktails_martini.jpg" alt="World's Easiest Martini">
                     </div>
                     <h6 class="my-3">Pour any of our flavors into a shaker filled with ice. Shake, strain into a Martini glass and enjoy.</h6>
                 </div>
-                <div class="col-md-3 cocktail text-book">
+                <div class="col-md-3 cocktail text-book mt-2">
                     <h3 class="font-adv-bold text-center my-3">Chilled Shot's</h3>
                     <div class="row d-flex justify-content-center">
                         <img height="256" src="./assets/images/cocktails_chilled.jpg" alt="Chilled Shots">
                     </div>
-                    <h6 class="my-3">Pour any of our flavors into a shaker filled with ice. Shake, strain into a Martini glass and enjoy.
-                    </h6>
+                    <h6 class="my-3">Just chill a bottle of your favorite flavor and serve cold.</h6>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4  mt-2">
                     <div class="row">
                         <div class="col-4 cocktail text-book d-flex justify-content-center">
                             <img height="200" src="./assets/images/cocktails_widowmaker.jpg" alt="Widow Maker">
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="row mt-4 d-flex justify-content-around mx-0">
-                <div class="col-md-6">
+                <div class="col-md-6 mt-2">
                     <div class="row">
                         <div class="col-4 cocktail text-book d-flex justify-content-center">
                             <img height="256" src="./assets/images/cocktails_cappuccino.jpg" alt="Cappuccino Dream">
@@ -167,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 mt-2">
                     <div class="row">
                         <div class="col-4 cocktail text-book d-flex justify-content-center">
                             <img height="256" src="./assets/images/cocktails_roadhouse.jpg" alt="Roadhouse Elvis">
@@ -186,10 +186,7 @@
 
     <!-- Videos -->
 
-    <div class="text-center mt-5">
-        <h1 class="font-adv-bold text-heading" id="headings">Videos</h1>
-    </div>
-    <section class="scene" id="videos">
+    <section class="scene mt-5" id="videos">
         <div class="video py-3">
             <div class="row mx-0">
                 <h4 class="text-center mx-auto">Please enjoy our</h4>
@@ -220,7 +217,7 @@
         <div>
             <div class="row my-5 mx-0 px-0">
                 <div class="col-md-4 col-sm-12 px-0">
-                    <row class="d-flex justify-content-end">
+                    <row class="d-flex justify-content-center">
                         <img src="./assets/images/vid_whiskeyglass.jpg" alt="whiskey glass" class="img-fluid">
                     </row>
                 </div>
@@ -269,7 +266,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="row d-flex justify-content-center pt-0">
-                                <img class="img-fluid" src="./assets/images/artists_retrovisions_logo.jpg" alt="Retrovisions Logo">
+                                <img class="w-100 img-fluid" src="./assets/images/artists_retrovisions_logo.jpg" alt="Retrovisions Logo">
                             </div>
                             <p class="text-book text-artist">Larry Grossman has worked both "in-house" and freelance for studios such as Disney (on the film TRON), Warner Bros., and
                             Dreamworks. Larry's work is also on display at such famed museums as the Petersen Automotive Museum, The Nat'l Hot Rod
@@ -289,7 +286,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="row d-flex justify-content-center pt-2">
-                                <img class="img-fluid" src="./assets/images/artists_strato_logo.jpg" alt="Strato Streak Logo">
+                                <img class="w-100 img-fluid" src="./assets/images/artists_strato_logo.jpg" alt="Strato Streak Logo">
                             </div>
                             <p class="text-book text-artist py-3">"Strato Streak" is an international advisory platform for classic car enthusiast and companies interested in classic car events. The activities of Strato Streak include, design and communication solutions, coordination of complex restoration
                             projects, advice for collectors and networking. This picture was taken by Daniela Tanzi for a Pin-up and classic car calendar by Strato Streak.</p>
@@ -331,7 +328,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="row d-flex justify-content-center p-2">
-                                <img class="img-fluid" src="./assets/images/artists_lightfarm_logo.jpg" alt="Lightfarm Logo">
+                                <img class="w-100 img-fluid" src="./assets/images/artists_lightfarm_logo.jpg" alt="Lightfarm Logo">
                             </div>
                             <p class="text-book text-artist p-3">Lightfarm Studios is a growing multinational company specializing in image/content creation for advertising, with studios in New Zealand, Australia, Brazil, and agent representation care of the prestigious Bernstein & Andriulli
                             covering the USA, UK and China.</p>
@@ -350,7 +347,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="row d-flex justify-content-center pt-1">
-                                <h2 class="text-book">Paolo Santambrogio</h2>
+                                <h2 class="text-book" id="paolo">Paolo Santambrogio</h2>
                             </div>
                             <p class="text-book text-artist">After high school he studied at the faculty of economic and social disciplines, while continuing his activity as a photographer in cooperation with many different magazines edited by major publishing houses. After leaving the university he decided to devote himself entirely to photography, and has been specializing in fashion,
                             advertising and portraits. In recent years he has begun diversifying his career entering into the realm of moving images, directing music videos and short clips. Fashion and aesthetics are not ends in themselves, but are elements of a broader creative and narrative path.</p>
@@ -367,8 +364,8 @@
 
     <!-- Where to Find Us -->
 
-    <div class="text-center mt-5">
-        <h1 class="font-adv-bold text-heading" id="headings">Where to Find Us</h1>
+    <div class="text-center">
+        <h1 class="font-adv-bold text-heading mt-5" >Where to Find Us</h1>
     </div>
 
     <section class="scene py-3" id="where">
@@ -396,7 +393,7 @@
     <!-- Contact Us -->
 
     <div class="text-center mt-5">
-        <h1 class="font-adv-bold text-heading" id="headings">Contact Us</h1>
+        <h1 class="font-adv-bold text-heading">Contact Us</h1>
     </div>
     <section class="scene" id="contact">
         <div class="container">
