@@ -86,3 +86,115 @@ $('#flavorModal').on('show.bs.modal', function (event) {
     modal.find('#flavor-desc').text(flavorDesc);
     modal.find('#flavor-label').attr('src', label);
 });
+
+
+// script for form submission
+$(function () {
+    function after_form_submitted(data) {
+        if (data.result == 'success') {
+            $('#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors, function (key, val) {
+                $('#error_message ul').append('<li>' + key + ':' + val + '</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function () {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if (label) {
+                    $btn.prop('type', 'submit');
+                    $btn.text(label);
+                    $btn.prop('orig_label', '');
+                }
+            });
+
+        }//else
+    }
+
+    $('#reused_form').submit(function (e) {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function () {
+            $btn = $(this);
+            $btn.prop('type', 'button');
+            $btn.prop('orig_label', $btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+        $.ajax({
+            type: "POST",
+            url: 'handler.php',
+            data: $form.serialize(),
+            success: after_form_submitted,
+            dataType: 'json'
+        });
+
+    });
+});
+
+// Mobile Form
+
+$(function () {
+    function after_form_submitted(data) {
+        if (data.result == 'success') {
+            $('#reused_form_mobile').hide();
+            $('#success_message-mobile').show();
+            $('#error_message-mobile').hide();
+        }
+        else {
+            $('#error_message-mobile').append('<ul></ul>');
+
+            jQuery.each(data.errors, function (key, val) {
+                $('#error_message-mobile ul').append('<li>' + key + ':' + val + '</li>');
+            });
+            $('#success_message-mobile').hide();
+            $('#error_message-mobile').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function () {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if (label) {
+                    $btn.prop('type', 'submit');
+                    $btn.text(label);
+                    $btn.prop('orig_label', '');
+                }
+            });
+
+        }//else
+    }
+
+    $('#reused_form_mobile').submit(function (e) {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function () {
+            $btn = $(this);
+            $btn.prop('type', 'button');
+            $btn.prop('orig_label', $btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+        $.ajax({
+            type: "POST",
+            url: 'handler-mobile.php',
+            data: $form.serialize(),
+            success: after_form_submitted,
+            dataType: 'json'
+        });
+
+    });
+});

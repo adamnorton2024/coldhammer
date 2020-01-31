@@ -250,6 +250,11 @@ input, textarea {
   z-index: 4;
 }
 
+button {
+  position: relative;
+  z-index: 5;
+}
+
 
 /***** Wiggle *****/
 
