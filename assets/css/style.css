@@ -213,13 +213,6 @@ iframe {
   background-color: rgba(255,255,255,0.75);	
 }
 
-#form_container
-{
-	padding:15px 15px;
-	margin-top:15px;
-	background: rgba(255,255,255,0.75);	
-}
-
 #contact-area{
   position: relative;
 }
@@ -229,6 +222,17 @@ iframe {
   top: 3.5rem;
   left:5.5rem;
   width: 25rem;
+  height: 29rem;
+  padding:15px 15px;
+	margin-top:15px;
+	background: rgba(255,255,255,0.75);	
+}
+
+#form_container_mobile{
+  display: none;
+  padding:15px 15px;
+	margin-top:15px;
+	background: rgba(255,255,255,0.75);	
 }
 
 #hand{
@@ -248,6 +252,10 @@ iframe {
   0% { transform: translate(2px, 0); }
   50% { transform: translate(-2px, 0); }
   100% { transform: translate(2px, 0); }
+}
+
+#contact-area{
+  margin: 0px;
 }
 
 /***** Shake *****/
@@ -291,6 +299,8 @@ iframe {
   body {
     overflow-x: hidden!important;
 }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -300,7 +310,24 @@ iframe {
   body {
     overflow-x: hidden!important;
 }
+#hand {
+  visibility: hidden;
 }
+
+#form_container{
+  visibility: hidden;
+}
+
+#form_container_mobile{
+  display: block;
+  visibility: visible;
+  padding:15px 15px;
+	margin-top:15px;
+	background: rgba(255,255,255,0.75);	
+}
+  
+}
+
 
 
 
