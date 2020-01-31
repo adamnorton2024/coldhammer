@@ -237,12 +237,17 @@ iframe {
 
 #hand{
   position: relative;
-
+  z-index: 2;
   left: -30px;
 }
 
 .row {
   margin: 0px;
+}
+
+input, textarea {
+  position: relative;
+  z-index: 4;
 }
 
 
