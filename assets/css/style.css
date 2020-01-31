@@ -237,9 +237,14 @@ iframe {
 
 #hand{
   position: relative;
-  z-index: 2;
+
   left: -30px;
 }
+
+.row {
+  margin: 0px;
+}
+
 
 /***** Wiggle *****/
 
@@ -311,10 +316,12 @@ iframe {
     overflow-x: hidden!important;
 }
 #hand {
+  display: none;
   visibility: hidden;
 }
 
 #form_container{
+  display: none;
   visibility: hidden;
 }
 
