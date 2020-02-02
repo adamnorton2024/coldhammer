@@ -200,7 +200,7 @@ iframe {
 
 #contact{
     width: 100%;
-    height: auto;
+    /* height: auto; */
     background-image: url('../images/bg_contact.jpg');
     background-size: 100% 100%;
     background-size: cover;
@@ -222,7 +222,7 @@ iframe {
   top: 3.5rem;
   left:5.5rem;
   width: 25rem;
-  height: 29rem;
+  /* height: 29rem; */
   padding:15px 15px;
 	margin-top:15px;
 	background: rgba(255,255,255,0.75);	
@@ -239,6 +239,8 @@ iframe {
   position: relative;
   z-index: 2;
   left: -30px;
+  visibility: hidden;
+  height: 600px;
 }
 
 .row {
@@ -326,8 +328,7 @@ button {
     overflow-x: hidden!important;
 }
 #hand {
-  display: none;
-  visibility: hidden;
+  height: 200px;
 }
 
 #form_container{
